@@ -1,0 +1,115 @@
+/* Apply common styles to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common styles for hero and villian sections */
+.hero, .villian {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 0 5%;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('Mercury 2.gif');
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+}
+
+.logo {
+    max-width: 160px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero content styles */
+.hero h1 {
+    font-size: 3.5rem;
+    margin-top: 10%;
+}
+
+.hero button {
+    background: #393939;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Indicator styles */
+.indicator {
+    margin-top: 50px;
+}
+
+.indicator span {
+    display: inline-block;
+    background: #3a3a3a;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.indicator span.active {
+    background: #bfbfbf;
+}
+
+/* Call to action styles */
+.cta {
+    position: absolute;
+    width: 90%;
+    max-width: 400px;
+    right: -8%;
+    bottom: 60px;
+}
+
+
+.footer {
+  font-family: 'Poppins', sans-serif;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 20%;
+   background-color: black;
+   color: white;
+   text-align: left;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .cta {
+        bottom: 20px;
+    }
+}
